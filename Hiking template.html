@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            overflow-x: hidden;
+            background-color: rgb(248, 242, 231);
+        }
+        body h1{
+            font-family: cursive;
+        }
+        .Header{
+            border: 1px solid black;
+            width: 100%;
+            height: 50px;
+            position: fixed;
+            background-color: white;
+        }
+        .Header ul{
+            display: flex;
+            list-style-type: none;
+        }
+        .Header ul li{
+            margin: 10px 0 10px 50px;
+            padding: 5px 10px 5px 10px;
+        }
+        .search{
+            margin: 10px 3px 10px 300px;
+            background-color: grey;
+            padding: 10px 10px 5px 70px;
+            border-radius: 20px;
+        }
+        .Header ul li:hover{
+            background-color: orange;
+            border-radius: 15px;
+        }
+        .FirstImage{
+            background-image: url(hiking\ 2.jpg);
+            background-size: 100vw 100vh;
+            background-repeat: no-repeat;
+            height: 700px;
+        }
+        .FirstImage h1{
+            color: white;
+            padding: 200px 0 0 100px;
+        }
+        .FirstImage h3,p{
+            color: white;
+            margin: 20px 0 0 100px;
+        }
+        .section2 h1{
+            margin: 10px 0 0 550px;
+            color: orange;
+        }
+        .section2 h4{
+            margin: 30px 0 0 440px;
+            color: black;
+        }
+        .HikingImages{
+            display: flex;
+            margin-top: 60px;
+            margin-left: 100px;
+        }
+        .HikingImages img{
+            width: 300px;
+            height: 300px;
+            background-color: gray;
+        }
+        .HikingImages .hiking2, .hiking3, .hiking4{
+            background-color: gray;
+            width: 300px;
+            height: 450px;
+            margin-left: 60px;
+        }
+        .HikingImages h4{
+            color: white;
+        }
+        .HikingImages  h2,h4{
+            margin: -10px 0 10px 10px;
+            padding: 15px;
+            color: orange;
+        }
+        button{
+            width: 150px;
+            height: 35px;
+            border-radius: 15px;
+            margin: 40px 0 100px 600px;
+            background-color: gray;
+            color: orange;
+        }
+        .section4{
+            background-image: url(hiking\ 5.avif);
+            background-size: 100vw 100vh;
+            height: 700px;
+            background-repeat: no-repeat;
+        }
+        .section4 #h1{
+            color: black;
+            padding: 300px 0 0 0;
+          
+        }
+        .section4 h1{
+            color: white;
+            text-align: right;
+            margin-right: 80px;
+        }
+        .section5 {
+            display: flex;
+            margin-bottom: 200px;
+        }
+        .section5 h2{
+            margin: 20px 0 0 100px;
+            color: orange;
+        }
+        .section5 h4{
+            margin: 10px 0 0 130px;
+            color: black;
+        }
+        .section6 h1,h2{
+            text-align: center;
+            width: 50%;
+            margin-left: 350px;
+        }
+        .section6 h3{
+            text-decoration: line-through;
+            text-align: center;
+            margin-bottom: 300px;
+        }
+        .section7 h3{
+            text-align: center;
+            color: black;
+            margin-bottom: 20px;
+        }
+        .section7 h1{
+            color: orange;
+            text-align: center;
+        }
+        .section7 input{
+            margin-left: 450px;
+            padding: 10px 0 5px 170px;
+            border-bottom-right-radius: -20px;
+            border-top-right-radius: -20px;
+            border-radius: 20px;
+
+        }
+        .section7 i{
+            padding: 10px 20px 6px 50px;
+            background-color: gray;
+            border-radius: 20px;
+            margin-bottom: 100px;
+        }
+        .footer{
+            display: flex;
+            background-color: grey;
+            height: 500px;
+        }
+        .footer h4{
+            color: white;
+        }
+        .footer h1{
+            color: orange;
+        }
+        .footer .subfooter1{
+            margin: 50px 0 10px 20px;
+        }
+        .footer .subfooter1 h1,h4{
+            padding-right: 130px;
+            margin-bottom: 10px;
+        }
+        .subfooter2{
+            display: flex;
+            margin-left: 200px;
+        }
+        .subfooter2 .supsubft1, .supsubft2, .supsubft3{
+            margin-top: 50px;
+        }
+       .footer i{
+            font-size: 20px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+
+    <div class="Header">
+        <nav>
+            <ul>
+                <li>HOME</li>
+                <li>ABOUT</li>
+                <li>SERVICES</li>
+                <li>EXPERIENCE</li>
+                <div class="search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                </ul>
+        </nav>
+    </div>
+
+    <!-- First Image Section 1 -->
+
+     <div class="FirstImage">
+        <h1>IT'S TIME <br> FOR HIKING </h1>
+        <h3>Lorem, ipsum dolor.</h3> <br>
+        <h3>READ MORE</h3> <br>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> Vel dicta laudantium sed corporis! Maxime laboriosam corporis <br> magni repudiandae maiores veritatis officia eligendi doloremque <br>deserunt, atque ipsam dolorum, minus error laudantium.</p>
+     </div>
+
+     <!-- Section 2 -->
+
+      <div class="section2">
+        <h1>LET'S GO</h1>
+        <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>Accusamus ipsa possimus ratione dolores aperiam soluta ut ea? <br> Non, quam quod.</h4>
+      </div>
+
+      <!-- Section 3 -->
+
+       <div class="HikingImages">
+        <div class="hiking2">
+            <img src="hiking 2.avif" alt="">
+            <h2>Lorem, ipsum.</h2>
+            <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut, accusantium.</h4>
+        </div>
+        <div class="hiking3">
+            <img src="hiking 3.avif" alt="">
+            <h2>Lorem, ipsum.</h2>
+            <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut, accusantium.</h4>
+        </div>
+        <div class="hiking4">
+            <img src="hiking 4.avif" alt="">
+            <h2>Lorem, ipsum.</h2>
+            <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut, accusantium.</h4>
+        </div>
+       </div>
+       <button><b>VIEW MORE</b></button>
+
+       <!-- Section 4 -->
+
+       <div class="section4">
+        <h1 id="h1">EXPLORE</h1>
+        <h1>THE WORLD</h1>
+       </div>
+
+       <!-- Section 5-->
+
+        <div class="section5">
+            <div class="prg1">
+                <h2>Lorem, ipsum.</h2>
+                <h4>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi magnam soluta laudantium eum libero esse.</h4>
+            </div>
+            <div class="prg2">
+                <h2>Lorem, ipsum.</h2>
+                <h4>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi magnam soluta laudantium eum libero esse.</h4>
+            </div>
+            <div class="prg3">
+                <h2>Lorem, ipsum.</h2>
+                <h4>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi magnam soluta laudantium eum libero esse.</h4>
+            </div>
+        </div>
+
+        <!-- Section 6-->
+
+        <div class="section6">
+            <h1>"</h1>
+            <h2>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et doloremque facere nemo laborum modi sapiente placeat vero, ipsum voluptatibus. Rem.</h2>
+            <br> <br> 
+            <h3>Lorem, ipsum.</h3>
+        </div>
+
+        <!-- Section 7 -->
+
+        <div class="section7">
+            <h1>Title Here</h1>
+            <br>
+            <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae deleniti <br> illum quasi saepe officia deserunt.</h3>
+            <br>
+            <input  type="text" placeholder="Title Here"><i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+
+        <!-- Footer Section-->
+
+        <div class="footer">
+            <div class="subfooter1">
+                <h1>Lorem, ipsum.</h1>
+                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi dolores assumenda officiis, nostrum dolorum porro nesciunt provident ratione cupiditate neque delectus repellendus, eveniet sapiente voluptatum nobis deleniti minus sunt explicabo vel illo molestiae, quas perspiciatis ullam ea! Cumque, atque suscipit.</h4>
+                <i class="fa-brands fa-linkedin"></i><i class="fa-brands fa-github"></i><i class="fa-brands fa-twitter"></i><i class="fa-brands fa-x-twitter"></i>
+            </div>
+            <div class="subfooter2">
+                <div class="supsubft1">
+                    <h1>Lorem</h1>
+                    <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, cupiditate.</h4>
+                </div>
+                <div class="supsubft2">
+                    <h1>Lorem</h1>
+                    <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, cupiditate.</h4>
+                </div>
+                <div class="supsubft3">
+                    <h1>Lorem</h1>
+                    <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, cupiditate.</h4>
+                </div>
+            </div>
+        </div>
+</body>
+</html>
